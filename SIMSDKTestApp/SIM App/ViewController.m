@@ -49,7 +49,7 @@
         
     };
     
-    [R5Client nDisplayLoginButtonsWithOrigin:@"homepage" onView:self onLoginResponse:callBack];
+    [R5Client displayLoginButtons:@"homepage" onView:self onLoginResponse:callBack];
     
 }
 
@@ -74,16 +74,16 @@
     
     switch ((int)((UIView*)sender).tag) {
         case 1:
-            [R5Client nLoginWithProvider:R5Facebook origin:@"homepage" onLoginResponse:callBack];
+            [R5Client loginWithProvider:R5Facebook origin:@"homepage" onLoginResponse:callBack];
             break;
         case 2:
-            [R5Client nLoginWithProvider:R5Google origin:nil onLoginResponse:callBack];
+            [R5Client loginWithProvider:R5Google origin:nil onLoginResponse:callBack];
             break;
         case 3:
-            [R5Client nLoginWithProvider:R5Twitter origin:@"homepage" onLoginResponse:callBack];
+            [R5Client loginWithProvider:R5Twitter origin:@"homepage" onLoginResponse:callBack];
             break;
         case 4:
-            [R5Client nLoginWithProvider:R5Paypal origin:@"homepage" onView:self onLoginResponse:callBack];
+            [R5Client loginWithProvider:R5Paypal origin:@"homepage" onView:self onLoginResponse:callBack];
             break;
             
         default:

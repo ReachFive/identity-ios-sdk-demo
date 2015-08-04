@@ -29,18 +29,13 @@ typedef void (^R5InitFinishedCallback)(R5Exception * error);
 
 + (R5Client*) sharedR5Client;
 
-+(void) initWithDomain:(NSString*) domain apiKey:(NSString*) apiKey clientLocal:(NSString*) local;
-
-+ (void) initNativeSDKWithDomain:(NSString*) domain apiKey:(NSString*) apiKey providers:(NSArray*) provider onInitFinish:(R5InitFinishedCallback) callback;
++ (void) init:(NSString*) domain apiKey:(NSString*) apiKey providers:(NSArray*) provider onInitFinish:(R5InitFinishedCallback) callback;
 
 +(NSString*) r5Provider2NSString:(R5Provider) provider;
 
-+(void) displayLoginButtonsWithTheme:(R5Theme) theme onView:(UIViewController*) view onLoginResponse:(R5LoginViewControlleCallback) callBack;
-+(void) loginWithProvider:(R5Provider) provider onView:(UIViewController*) view onLoginResponse:(R5LoginViewControlleCallback) callBack;
-
-+(void) nDisplayLoginButtonsWithOrigin:(NSString*) origin onView:(UIViewController*) viewCtrl onLoginResponse:(R5LoginViewControlleCallback)callBack;
-+(void) nLoginWithProvider:(R5Provider) provider origin:(NSString*) origin onLoginResponse:(R5LoginViewControlleCallback) callBack;
-+(void) nLoginWithProvider:(R5Provider) provider origin:(NSString*) origin onView:(UIViewController*) view  onLoginResponse:(R5LoginViewControlleCallback) callBack;
++(void) displayLoginButtons:(NSString*) origin onView:(UIViewController*) viewCtrl onLoginResponse:(R5LoginViewControlleCallback)callBack;
++(void) loginWithProvider:(R5Provider) provider origin:(NSString*) origin onLoginResponse:(R5LoginViewControlleCallback) callBack;
++(void) loginWithProvider:(R5Provider) provider origin:(NSString*) origin onView:(UIViewController*) view  onLoginResponse:(R5LoginViewControlleCallback) callBack;
 
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 

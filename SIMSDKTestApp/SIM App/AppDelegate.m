@@ -31,10 +31,10 @@
     };
     
     
-    [R5Client initNativeSDKWithDomain:@"reach5.og4.me"
-                               apiKey:@"BvnynWPdlUOGwC3yERXi"
-                            providers:nil
-                         onInitFinish:callBack];
+    [R5Client init:@"reach5.og4.me"
+            apiKey:@"BvnynWPdlUOGwC3yERXi"
+         providers:nil
+      onInitFinish:callBack];
     
     [R5Client application:application didFinishLaunchingWithOptions:launchOptions];
 
