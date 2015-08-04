@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87900A251AB4298600B93CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87900A241AB4298600B93CAE /* main.m */; };
+		87900A281AB4298600B93CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87900A271AB4298600B93CAE /* AppDelegate.m */; };
+		87900A2B1AB4298600B93CAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87900A2A1AB4298600B93CAE /* ViewController.m */; };
+		87900A2E1AB4298600B93CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87900A2C1AB4298600B93CAE /* Main.storyboard */; };
+		87900A301AB4298600B93CAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87900A2F1AB4298600B93CAE /* Images.xcassets */; };
+		87900A331AB4298600B93CAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87900A311AB4298600B93CAE /* LaunchScreen.xib */; };
+		87900A3F1AB4298600B93CAE /* SIM_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87900A3E1AB4298600B93CAE /* SIM_AppTests.m */; };
+		87DE22C61B68938F004C2C1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DE22C51B68938F004C2C1A /* SystemConfiguration.framework */; };
+		87DE22C81B689399004C2C1A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DE22C71B689399004C2C1A /* MobileCoreServices.framework */; };
+		87E46C591B6B3C010025F6A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C581B6B3C010025F6A7 /* AudioToolbox.framework */; };
+		87E46C5B1B6B3C610025F6A7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C5A1B6B3C610025F6A7 /* CoreLocation.framework */; };
+		87E46C631B6B3D0A0025F6A7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C5C1B6B3D0A0025F6A7 /* Fabric.framework */; };
+		87E46C641B6B3D0A0025F6A7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C5D1B6B3D0A0025F6A7 /* FBSDKCoreKit.framework */; };
+		87E46C651B6B3D0A0025F6A7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C5E1B6B3D0A0025F6A7 /* FBSDKLoginKit.framework */; };
+		87E46C661B6B3D0A0025F6A7 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C5F1B6B3D0A0025F6A7 /* GoogleOpenSource.framework */; };
+		87E46C671B6B3D0A0025F6A7 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C601B6B3D0A0025F6A7 /* GooglePlus.framework */; };
+		87E46C681B6B3D0A0025F6A7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C611B6B3D0A0025F6A7 /* TwitterCore.framework */; };
+		87E46C691B6B3D0A0025F6A7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C621B6B3D0A0025F6A7 /* TwitterKit.framework */; };
+		87E46C6B1B6B3D5B0025F6A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C6A1B6B3D5B0025F6A7 /* AVFoundation.framework */; };
+		87E46C771B6B3DF30025F6A7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C6C1B6B3DF20025F6A7 /* Accelerate.framework */; };
+		87E46C781B6B3DF30025F6A7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C6D1B6B3DF20025F6A7 /* Accounts.framework */; };
+		87E46C791B6B3DF30025F6A7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C6E1B6B3DF20025F6A7 /* AddressBook.framework */; };
+		87E46C7A1B6B3DF30025F6A7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C6F1B6B3DF20025F6A7 /* AssetsLibrary.framework */; };
+		87E46C7B1B6B3DF30025F6A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C701B6B3DF20025F6A7 /* CoreData.framework */; };
+		87E46C7C1B6B3DF30025F6A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C711B6B3DF30025F6A7 /* CoreGraphics.framework */; };
+		87E46C7D1B6B3DF30025F6A7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C721B6B3DF30025F6A7 /* CoreMedia.framework */; };
+		87E46C7E1B6B3DF30025F6A7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C731B6B3DF30025F6A7 /* CoreMotion.framework */; };
+		87E46C7F1B6B3DF30025F6A7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C741B6B3DF30025F6A7 /* CoreText.framework */; };
+		87E46C801B6B3DF30025F6A7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C751B6B3DF30025F6A7 /* MediaPlayer.framework */; };
+		87E46C811B6B3DF30025F6A7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E46C761B6B3DF30025F6A7 /* MessageUI.framework */; };
+		87E46C831B6B474C0025F6A7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 87E46C821B6B474C0025F6A7 /* TwitterKitResources.bundle */; };
+		87E46C851B6B4B590025F6A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E46C841B6B4B590025F6A7 /* Localizable.strings */; };
+		87E49D171ABA095A00FAE617 /* SimSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E49D161ABA095A00FAE617 /* SimSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87900A391AB4298600B93CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87900A171AB4298600B93CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87900A1E1AB4298600B93CAE;
+			remoteInfo = "SIM App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87900A1F1AB4298600B93CAE /* SIM App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIM App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87900A231AB4298600B93CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87900A241AB4298600B93CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87900A261AB4298600B93CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87900A271AB4298600B93CAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87900A291AB4298600B93CAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87900A2A1AB4298600B93CAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87900A2D1AB4298600B93CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87900A2F1AB4298600B93CAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		87900A321AB4298600B93CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		87900A381AB4298600B93CAE /* SIM AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIM AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87900A3D1AB4298600B93CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87900A3E1AB4298600B93CAE /* SIM_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIM_AppTests.m; sourceTree = "<group>"; };
+		87DE22C51B68938F004C2C1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		87DE22C71B689399004C2C1A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		87E46C581B6B3C010025F6A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		87E46C5A1B6B3C610025F6A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		87E46C5C1B6B3D0A0025F6A7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		87E46C5D1B6B3D0A0025F6A7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		87E46C5E1B6B3D0A0025F6A7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		87E46C5F1B6B3D0A0025F6A7 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		87E46C601B6B3D0A0025F6A7 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		87E46C611B6B3D0A0025F6A7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		87E46C621B6B3D0A0025F6A7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		87E46C6A1B6B3D5B0025F6A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87E46C6C1B6B3DF20025F6A7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		87E46C6D1B6B3DF20025F6A7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		87E46C6E1B6B3DF20025F6A7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		87E46C6F1B6B3DF20025F6A7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		87E46C701B6B3DF20025F6A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		87E46C711B6B3DF30025F6A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87E46C721B6B3DF30025F6A7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		87E46C731B6B3DF30025F6A7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		87E46C741B6B3DF30025F6A7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		87E46C751B6B3DF30025F6A7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		87E46C761B6B3DF30025F6A7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		87E46C821B6B474C0025F6A7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		87E46C841B6B4B590025F6A7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		87E49D161ABA095A00FAE617 /* SimSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87900A1C1AB4298600B93CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E46C771B6B3DF30025F6A7 /* Accelerate.framework in Frameworks */,
+				87E46C781B6B3DF30025F6A7 /* Accounts.framework in Frameworks */,
+				87E46C791B6B3DF30025F6A7 /* AddressBook.framework in Frameworks */,
+				87E46C7A1B6B3DF30025F6A7 /* AssetsLibrary.framework in Frameworks */,
+				87E46C7B1B6B3DF30025F6A7 /* CoreData.framework in Frameworks */,
+				87E46C7C1B6B3DF30025F6A7 /* CoreGraphics.framework in Frameworks */,
+				87E46C7D1B6B3DF30025F6A7 /* CoreMedia.framework in Frameworks */,
+				87E46C7E1B6B3DF30025F6A7 /* CoreMotion.framework in Frameworks */,
+				87E46C7F1B6B3DF30025F6A7 /* CoreText.framework in Frameworks */,
+				87E46C801B6B3DF30025F6A7 /* MediaPlayer.framework in Frameworks */,
+				87E46C811B6B3DF30025F6A7 /* MessageUI.framework in Frameworks */,
+				87E46C6B1B6B3D5B0025F6A7 /* AVFoundation.framework in Frameworks */,
+				87E46C5B1B6B3C610025F6A7 /* CoreLocation.framework in Frameworks */,
+				87E46C591B6B3C010025F6A7 /* AudioToolbox.framework in Frameworks */,
+				87DE22C81B689399004C2C1A /* MobileCoreServices.framework in Frameworks */,
+				87DE22C61B68938F004C2C1A /* SystemConfiguration.framework in Frameworks */,
+				87E46C641B6B3D0A0025F6A7 /* FBSDKCoreKit.framework in Frameworks */,
+				87E46C681B6B3D0A0025F6A7 /* TwitterCore.framework in Frameworks */,
+				87E46C671B6B3D0A0025F6A7 /* GooglePlus.framework in Frameworks */,
+				87E49D171ABA095A00FAE617 /* SimSDK.framework in Frameworks */,
+				87E46C651B6B3D0A0025F6A7 /* FBSDKLoginKit.framework in Frameworks */,
+				87E46C661B6B3D0A0025F6A7 /* GoogleOpenSource.framework in Frameworks */,
+				87E46C631B6B3D0A0025F6A7 /* Fabric.framework in Frameworks */,
+				87E46C691B6B3D0A0025F6A7 /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87900A351AB4298600B93CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87900A161AB4298600B93CAE = {
+			isa = PBXGroup;
+			children = (
+				87900A211AB4298600B93CAE /* SIM App */,
+				87D97D0F1AB8DDF500435EEF /* Frameworks */,
+				87900A3B1AB4298600B93CAE /* SIM AppTests */,
+				87900A201AB4298600B93CAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87900A201AB4298600B93CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87900A1F1AB4298600B93CAE /* SIM App.app */,
+				87900A381AB4298600B93CAE /* SIM AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87900A211AB4298600B93CAE /* SIM App */ = {
+			isa = PBXGroup;
+			children = (
+				87900A261AB4298600B93CAE /* AppDelegate.h */,
+				87900A271AB4298600B93CAE /* AppDelegate.m */,
+				87900A291AB4298600B93CAE /* ViewController.h */,
+				87900A2A1AB4298600B93CAE /* ViewController.m */,
+				87900A2C1AB4298600B93CAE /* Main.storyboard */,
+				87900A2F1AB4298600B93CAE /* Images.xcassets */,
+				87900A311AB4298600B93CAE /* LaunchScreen.xib */,
+				87900A221AB4298600B93CAE /* Supporting Files */,
+			);
+			path = "SIM App";
+			sourceTree = "<group>";
+		};
+		87900A221AB4298600B93CAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87E46C841B6B4B590025F6A7 /* Localizable.strings */,
+				87900A231AB4298600B93CAE /* Info.plist */,
+				87900A241AB4298600B93CAE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87900A3B1AB4298600B93CAE /* SIM AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				87900A3E1AB4298600B93CAE /* SIM_AppTests.m */,
+				87900A3C1AB4298600B93CAE /* Supporting Files */,
+			);
+			path = "SIM AppTests";
+			sourceTree = "<group>";
+		};
+		87900A3C1AB4298600B93CAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87900A3D1AB4298600B93CAE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87D97D0F1AB8DDF500435EEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87E46C821B6B474C0025F6A7 /* TwitterKitResources.bundle */,
+				87E46C6C1B6B3DF20025F6A7 /* Accelerate.framework */,
+				87E46C6D1B6B3DF20025F6A7 /* Accounts.framework */,
+				87E46C6E1B6B3DF20025F6A7 /* AddressBook.framework */,
+				87E46C6F1B6B3DF20025F6A7 /* AssetsLibrary.framework */,
+				87E46C701B6B3DF20025F6A7 /* CoreData.framework */,
+				87E46C711B6B3DF30025F6A7 /* CoreGraphics.framework */,
+				87E46C721B6B3DF30025F6A7 /* CoreMedia.framework */,
+				87E46C731B6B3DF30025F6A7 /* CoreMotion.framework */,
+				87E46C741B6B3DF30025F6A7 /* CoreText.framework */,
+				87E46C751B6B3DF30025F6A7 /* MediaPlayer.framework */,
+				87E46C761B6B3DF30025F6A7 /* MessageUI.framework */,
+				87E46C6A1B6B3D5B0025F6A7 /* AVFoundation.framework */,
+				87E46C5C1B6B3D0A0025F6A7 /* Fabric.framework */,
+				87E46C5D1B6B3D0A0025F6A7 /* FBSDKCoreKit.framework */,
+				87E46C5E1B6B3D0A0025F6A7 /* FBSDKLoginKit.framework */,
+				87E46C5F1B6B3D0A0025F6A7 /* GoogleOpenSource.framework */,
+				87E46C601B6B3D0A0025F6A7 /* GooglePlus.framework */,
+				87E46C611B6B3D0A0025F6A7 /* TwitterCore.framework */,
+				87E46C621B6B3D0A0025F6A7 /* TwitterKit.framework */,
+				87E46C5A1B6B3C610025F6A7 /* CoreLocation.framework */,
+				87E46C581B6B3C010025F6A7 /* AudioToolbox.framework */,
+				87DE22C71B689399004C2C1A /* MobileCoreServices.framework */,
+				87DE22C51B68938F004C2C1A /* SystemConfiguration.framework */,
+				87E49D161ABA095A00FAE617 /* SimSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87900A1E1AB4298600B93CAE /* SIM App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87900A421AB4298600B93CAE /* Build configuration list for PBXNativeTarget "SIM App" */;
+			buildPhases = (
+				87900A1B1AB4298600B93CAE /* Sources */,
+				87900A1C1AB4298600B93CAE /* Frameworks */,
+				87900A1D1AB4298600B93CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIM App";
+			productName = "SIM App";
+			productReference = 87900A1F1AB4298600B93CAE /* SIM App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87900A371AB4298600B93CAE /* SIM AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87900A451AB4298600B93CAE /* Build configuration list for PBXNativeTarget "SIM AppTests" */;
+			buildPhases = (
+				87900A341AB4298600B93CAE /* Sources */,
+				87900A351AB4298600B93CAE /* Frameworks */,
+				87900A361AB4298600B93CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87900A3A1AB4298600B93CAE /* PBXTargetDependency */,
+			);
+			name = "SIM AppTests";
+			productName = "SIM AppTests";
+			productReference = 87900A381AB4298600B93CAE /* SIM AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87900A171AB4298600B93CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Reach5;
+				TargetAttributes = {
+					87900A1E1AB4298600B93CAE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					87900A371AB4298600B93CAE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 87900A1E1AB4298600B93CAE;
+					};
+				};
+			};
+			buildConfigurationList = 87900A1A1AB4298600B93CAE /* Build configuration list for PBXProject "SIM App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87900A161AB4298600B93CAE;
+			productRefGroup = 87900A201AB4298600B93CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87900A1E1AB4298600B93CAE /* SIM App */,
+				87900A371AB4298600B93CAE /* SIM AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87900A1D1AB4298600B93CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E46C851B6B4B590025F6A7 /* Localizable.strings in Resources */,
+				87E46C831B6B474C0025F6A7 /* TwitterKitResources.bundle in Resources */,
+				87900A2E1AB4298600B93CAE /* Main.storyboard in Resources */,
+				87900A331AB4298600B93CAE /* LaunchScreen.xib in Resources */,
+				87900A301AB4298600B93CAE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87900A361AB4298600B93CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87900A1B1AB4298600B93CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87900A2B1AB4298600B93CAE /* ViewController.m in Sources */,
+				87900A281AB4298600B93CAE /* AppDelegate.m in Sources */,
+				87900A251AB4298600B93CAE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87900A341AB4298600B93CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87900A3F1AB4298600B93CAE /* SIM_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87900A3A1AB4298600B93CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87900A1E1AB4298600B93CAE /* SIM App */;
+			targetProxy = 87900A391AB4298600B93CAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87900A2C1AB4298600B93CAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87900A2D1AB4298600B93CAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87900A311AB4298600B93CAE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87900A321AB4298600B93CAE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87900A401AB4298600B93CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87900A411AB4298600B93CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87900A431AB4298600B93CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SIM App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87900A441AB4298600B93CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SIM App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87900A461AB4298600B93CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/SIM",
+					AppTests,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SIM AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIM App.app/SIM App";
+			};
+			name = Debug;
+		};
+		87900A471AB4298600B93CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/SIM",
+					AppTests,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SIM AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIM App.app/SIM App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87900A1A1AB4298600B93CAE /* Build configuration list for PBXProject "SIM App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87900A401AB4298600B93CAE /* Debug */,
+				87900A411AB4298600B93CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87900A421AB4298600B93CAE /* Build configuration list for PBXNativeTarget "SIM App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87900A431AB4298600B93CAE /* Debug */,
+				87900A441AB4298600B93CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87900A451AB4298600B93CAE /* Build configuration list for PBXNativeTarget "SIM AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87900A461AB4298600B93CAE /* Debug */,
+				87900A471AB4298600B93CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87900A171AB4298600B93CAE /* Project object */;
+}

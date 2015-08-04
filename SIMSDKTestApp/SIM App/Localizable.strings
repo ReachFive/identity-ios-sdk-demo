@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SIM App
+*/
+
+"Close"="Close";
+
+"Login with Facebook"="Login with Facebook";
+"Login with Google Plus"="Login with Google Plus";
+"Login with Twitter"="Login with Twitter";
+"Login with Paypal"="Login with Paypal";
