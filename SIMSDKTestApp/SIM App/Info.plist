@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -44,14 +49,14 @@
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
-		<string>your-api-key</string>
+		<string>1790f0ba84f17fd7c7ab34b84550a1b097c5bdaf</string>
 		<key>Kits</key>
 		<array>
 			<dict>
 				<key>KitInfo</key>
 				<dict/>
 				<key>KitName</key>
-				<string>Crashlytics</string>
+				<string>Twitter</string>
 			</dict>
 		</array>
 	</dict>
