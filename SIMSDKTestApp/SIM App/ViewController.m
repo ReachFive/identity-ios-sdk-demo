@@ -77,7 +77,7 @@
             [R5Client loginWithProvider:R5Facebook origin:@"homepage" onLoginResponse:callBack];
             break;
         case 2:
-            [R5Client loginWithProvider:R5Google origin:nil onLoginResponse:callBack];
+            [R5Client loginWithProvider:R5Google origin:nil onView:self onLoginResponse:callBack];
             break;
         case 3:
             [R5Client loginWithProvider:R5Twitter origin:@"homepage" onLoginResponse:callBack];

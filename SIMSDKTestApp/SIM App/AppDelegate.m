@@ -16,7 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    R5InitFinishedCallback callBack = ^(R5Exception * error)
+    R5InitFinishedCallback callBack = ^(NSArray * providers, R5Exception * error)
     {
         if (error)
         {
@@ -25,14 +25,14 @@
         }
         else
         {
-            NSLog(@">> onLoginWithProvider callback SIM Native SDK Init with success !");
+            NSLog(@">> onLoginWithProvider: SDK Initialized, providers = %@", providers);
         }
         
     };
     
     
-    [R5Client init:@"reach5.og4.me"
-            apiKey:@"BvnynWPdlUOGwC3yERXi"
+    [R5Client init:@"reach5-stg.og4.me"
+            apiKey:@"9rnkdhnwC1nzKpQ3yFTE"
          providers:nil
       onInitFinish:callBack];
     

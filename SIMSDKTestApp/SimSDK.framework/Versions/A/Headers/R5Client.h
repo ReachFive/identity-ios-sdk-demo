@@ -23,7 +23,7 @@ typedef enum {
 
 @class R5LoginResponse;
 typedef void (^R5LoginViewControlleCallback)(R5LoginResponse * response, R5Exception * error);
-typedef void (^R5InitFinishedCallback)(R5Exception * error);
+typedef void (^R5InitFinishedCallback)(NSArray * providers, R5Exception * error);
 
 @interface R5Client : NSObject
 
@@ -36,6 +36,8 @@ typedef void (^R5InitFinishedCallback)(R5Exception * error);
 +(void) displayLoginButtons:(NSString*) origin onView:(UIViewController*) viewCtrl onLoginResponse:(R5LoginViewControlleCallback)callBack;
 +(void) loginWithProvider:(R5Provider) provider origin:(NSString*) origin onLoginResponse:(R5LoginViewControlleCallback) callBack;
 +(void) loginWithProvider:(R5Provider) provider origin:(NSString*) origin onView:(UIViewController*) view  onLoginResponse:(R5LoginViewControlleCallback) callBack;
+
++(void) logOut;
 
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 

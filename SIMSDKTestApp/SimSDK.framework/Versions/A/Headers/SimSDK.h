@@ -9,4 +9,4 @@
 #import <SimSDK/R5Client.h>
 #import <SimSDK/R5LoginResponse.h>
 
-#define SIM_SDK_VERSION @"2.0.001"
+#define R5_SDK_VERSION @"2.2.0"
